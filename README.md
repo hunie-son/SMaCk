@@ -18,13 +18,23 @@ To validate our approach, we assume that the attacker injects malicious code int
 - ### Analyzing SMC Conflict with Various x86 Instructions:
   * This process can be done in the 10 different specific microarchitectures (Table 3 in the paper).<br/>
   * Data collection for target microarchitecture.<br/>
-  `cd SMaCk/cache_time`<br/>
+  `cd SMaCk/SMaCk_cachetime`<br/>
   `make`<br/>
-  `taskset -c {core#} ./app > {name}_csv`<br/>
-  
+  `taskset -c {core#} ./smack_cachetime > {name}_csv`<br/>
 
-- ### Analyzing SMC Conflict with Various x86 Instructions:
+  * Data collection for Mastik Toolkit for baseline comparison.<br/>
+  `cd SMaCk/Mastik`<br/>
+  `make`<br/>
+  `taskset -c {core#} ./mastik_cachetime > {name}_csv`<br/>
+  
+  * Draw plot for analysis (Matlab) <br/>
+  adjust code with file name from above
+  `cache_draw.m`<br/>
+
+- ### SMaCk Prime and IProbe attack:
    * This process can be done in the 10 different specific microarchitectures (Table 3 in the paper).<br/>
   `cd SMaCk/SMaCk_PNP`<br/>
   `Make`<br/>
   `./app > `<br/>
+  
+- ### SMaCk ISpectre attack:
