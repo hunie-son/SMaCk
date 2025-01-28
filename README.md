@@ -49,8 +49,9 @@ To validate our approach, we assume that the attacker injects malicious code int
   
 - ### SMaCk ISpectre attack:
   * Performing Prime and IProbe attack <br/>
-  * Function name: flush, flushopt... <br/>
-  * Anomaly: based on the smack_cachetime figure <br/>
+  * Function name: load, flush, flushopt, store, lock, prefetch, prefetchnta, execute, clwb <br/>
+  * Iteration: Iteration for the attack <br/>
+  * Anomaly: based on the smack_cachetime figure (ex., 500 or 600) <br/>
   `cd SMaCk/SMaCk_ISpectre`<br/>
   `make`<br/>
   `taskset -c {core#} ./smack_ispectre <Function_name> <Iteration> <Anomaly>`<br/>
