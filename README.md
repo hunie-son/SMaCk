@@ -23,13 +23,17 @@ To validate our approach, we assume that the attacker injects malicious code int
   `taskset -c {core#} ./smack_cachetime > {name}_csv`<br/>
 
   * Data collection for Mastik Toolkit for baseline comparison.<br/>
-  `cd SMaCk/Mastik`<br/>
+  `cd SMaCk/Mastik_cachetime`<br/>
   `make`<br/>
   `taskset -c {core#} ./mastik_cachetime > {name}_csv`<br/>
   
   * Draw plot for analysis (Matlab) <br/>
   adjust code with file name from above
   `cache_draw.m`<br/>
+
+  * Datasets <br/>
+  `cd SMaCk/SMaCk_cachetime/data`<br/>
+  `cd SMaCk/Mastik_cachetime/data`<br/>
 
 - ### SMaCk Prime and IProbe attack:
   * Performing Prime and IProbe attack  <br/>
