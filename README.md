@@ -14,10 +14,17 @@ To validate our approach, we assume that the attacker injects malicious code int
 - ### Additional
   * Software: MATLAB R2021
     
-## Experiments
+## Implementation 
 - ### Analyzing SMC Conflict with Various x86 Instructions:
-  * This process can be done in the 10 different specific microarchitectures (Table 3 in the paper).
-  `cd DefWeb/Data_Collection`<br/>
-  `cd DefWeb/Data_Collection`<br/>
-  `./run_demo_chrome.sh`<br/>
+  * This process can be done in the 10 different specific microarchitectures (Table 3 in the paper).<br/>
+  * Data collection for target microarchitecture.<br/>
+  `cd SMaCk/cache_time`<br/>
+  `make`<br/>
+  `taskset -c {core#} ./app > {name}_csv`<br/>
   
+
+- ### Analyzing SMC Conflict with Various x86 Instructions:
+   * This process can be done in the 10 different specific microarchitectures (Table 3 in the paper).<br/>
+  `cd SMaCk/SMaCk_PNP`<br/>
+  `Make`<br/>
+  `./app > `<br/>
