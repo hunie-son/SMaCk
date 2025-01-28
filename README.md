@@ -32,21 +32,21 @@ To validate our approach, we assume that the attacker injects malicious code int
   `cache_draw.m`<br/>
 
 - ### SMaCk Prime and IProbe attack:
-  * Performing Prime and IProbe attack 
+  * Performing Prime and IProbe attack  <br/>
   `cd SMaCk/SMaCk_PNP`<br/>
   `python prime_probe_gen.py {fucntion name} i`<br/>
   `make`<br/>
   `taskset -c {core#} ./pnp_attack <target_set> <delay_cycle> <nsamples>`<br/>
 
-  * Performing Mastik Prime and Probe attack for baseline
+  * Performing Mastik Prime and Probe attack for baseline <br/>
   `cd SMaCk/Mastik_PNP`<br/>
   `make`<br/>
   `taskset -c {core#} ./mastik_pnp <target_set> <delay_cycle> <nsamples>`<br/>
   
 - ### SMaCk ISpectre attack:
-  * Performing Prime and IProbe attack
-  * Function name: flush, flushopt...
-  * Anomaly: based on the smack_cachetime figure
+  * Performing Prime and IProbe attack <br/>
+  * Function name: flush, flushopt... <br/>
+  * Anomaly: based on the smack_cachetime figure <br/>
   `cd SMaCk/SMaCk_ISpectre`<br/>
   `make`<br/>
   `taskset -c {core#} ./smack_ispectre <Function_name> <Iteration> <Anomaly>`<br/>
