@@ -1,5 +1,4 @@
-# SMaCk
-SMaCk: Efficient Instruction Cache Attacks via Self-Modifying Code Conflicts
+# SMaCk: Efficient Instruction Cache Attacks via Self-Modifying Code Conflicts
 
 SMaCk is a comprehensive toolkit for executing efficient instruction cache attacks via self-modifying code (SMC) conflicts on x86 processors. We leverage the L1 instruction cache by inducing SMC conflicts, which create measurable timing discrepancies that can be exploited for covert channel attacks and sensitive information leakage. Our toolkit demonstrates that self-modifying code mechanisms in modern Intel and AMD microarchitectures can be utilized to enhance traditional Prime+Probe and Spectre attacks on the L1 instruction cache, enabling the extraction of cryptographic keys and the establishment of high bandwidth.
 To validate our approach, we assume that the attacker injects malicious code into a user-space application running on the victim's device, which monitors instruction cache timings to infer sensitive operations performed by the victim. We collect extensive cache timing traces from 10 distinct x86 microarchitectures, including Intel Cascade Lake, Comet Lake, and AMD Ryzen 5, across multiple cryptographic libraries.
