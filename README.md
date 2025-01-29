@@ -20,12 +20,12 @@ To validate our approach, we assume that the attacker injects malicious code int
   * Data collection for target microarchitecture.<br/>
   `cd SMaCk/SMaCk_cachetime`<br/>
   `make`<br/>
-  `taskset -c {core#} ./smack_cachetime > {name}_csv`<br/>
+  `taskset -c <core#> ./smack_cachetime > {name}_csv`<br/>
 
   * Data collection for Mastik Toolkit for baseline comparison.<br/>
   `cd SMaCk/Mastik_cachetime`<br/>
   `make`<br/>
-  `taskset -c {core#} ./mastik_cachetime > {name}_csv`<br/>
+  `taskset -c <core#> ./mastik_cachetime > {name}_csv`<br/>
   
   * Draw plot for analysis (Matlab) <br/>
   adjust code with file name from above
@@ -39,12 +39,12 @@ To validate our approach, we assume that the attacker injects malicious code int
   `cd SMaCk/SMaCk_PNP`<br/>
   `python prime_probe_gen.py {fucntion name} i`<br/>
   `make`<br/>
-  `taskset -c {core#} ./pnp_attack <target_set> <delay_cycle> <nsamples>`<br/>
+  `taskset -c <core#> ./pnp_attack <target_set> <delay_cycle> <nsamples>`<br/>
 
   * Performing Mastik Prime and Probe attack for baseline <br/>
   `cd SMaCk/Mastik_PNP`<br/>
   `make`<br/>
-  `taskset -c {core#} ./mastik_pnp <target_set> <delay_cycle> <nsamples>`<br/>
+  `taskset -c <core#> ./mastik_pnp <target_set> <delay_cycle> <nsamples>`<br/>
   
 - ### SMaCk ISpectre attack:
   * Performing Prime and IProbe attack <br/>
@@ -53,4 +53,4 @@ To validate our approach, we assume that the attacker injects malicious code int
   * Anomaly: based on the smack_cachetime figure (ex., 500 or 600) <br/>
   `cd SMaCk/SMaCk_ISpectre`<br/>
   `make`<br/>
-  `taskset -c {core#} ./smack_ispectre <Function_name> <Iteration> <Anomaly>`<br/>
+  `taskset -c <core#> ./smack_ispectre <Function_name> <Iteration> <Anomaly>`<br/>
