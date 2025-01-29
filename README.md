@@ -50,7 +50,7 @@ To validate our approach, we assume that the attacker injects malicious code int
   `cd SMaCk/SMaCk_PNP_variants`<br/>
   
 - ### SMaCk ISpectre attack:
-  * Performing Spectre attack utilizing SMC behavior <br/>
+  * Performing Spectre attack utilizing SMC behavior on L1i cache <br/>
   * Function name: load, flush, flushopt, store, lock, prefetch, prefetchnta, execute, clwb <br/>
   * Iteration: Iteration for the attack <br/>
   * Anomaly: based on the smack_cachetime figure (ex., 500 or 600) <br/>
