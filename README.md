@@ -32,8 +32,7 @@ To validate our approach, we assume that the attacker injects malicious code int
   `cache_draw.m`<br/>
 
   * Datasets <br/>
-  `cd SMaCk/SMaCk_cachetime/data`<br/>
-  `cd SMaCk/Mastik_cachetime/data`<br/>
+  `cd SMaCk/Data`<br/>
 
 - ### SMaCk Prime and IProbe attack:
   * Performing Prime and IProbe attack  <br/>
