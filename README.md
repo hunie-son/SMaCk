@@ -45,6 +45,9 @@ To validate our approach, we assume that the attacker injects malicious code int
   `cd SMaCk/Mastik_PNP`<br/>
   `make`<br/>
   `taskset -c <core#> ./mastik_pnp <target_set> <delay_cycle> <nsamples>`<br/>
+
+  * Binary Datasets <br/>
+  `cd SMaCk/SMaCk_PNP_variants`<br/>
   
 - ### SMaCk ISpectre attack:
   * Performing Prime and IProbe attack <br/>
