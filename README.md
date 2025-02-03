@@ -20,12 +20,12 @@ To validate our approach, we assume that the attacker injects malicious code int
   * Data collection for target microarchitecture.<br/>
   `cd SMaCk/SMaCk_cachetime`<br/>
   `make`<br/>
-  `taskset -c <core#> ./smack_cachetime > {name}_csv`<br/>
+  `taskset -c <core#> ./smack_cachetime > {name}.csv`<br/>
 
   * Data collection for Mastik Toolkit for baseline comparison.<br/>
   `cd SMaCk/Mastik_cachetime`<br/>
   `make`<br/>
-  `taskset -c <core#> ./mastik_cachetime > {name}_csv`<br/>
+  `taskset -c <core#> ./mastik_cachetime > {name}.csv`<br/>
   
   * Draw plot for analysis (Matlab) <br/>
   adjust code with file name from above <br/>
