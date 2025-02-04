@@ -93,7 +93,7 @@ ylabel('Histogram');
 title('Store');
 
 xlabel('CPU Cycles');
-lgd = legend('L1D', '', 'L1I', '', 'LLC', '', 'DRAM', '');
+lgd = legend('L2', '', 'L1I', '', 'LLC', '', 'DRAM', '');
 lgd.Position = [0.85, 0.22, 0.02, 0.05];
 
 set(findall(gcf, '-property', 'FontSize'), 'FontSize', 15);
@@ -126,7 +126,7 @@ for attack_idx = 1:num_attack
 end
 
 xlabel('CPU Cycles');
-lgd = legend('L1D', '', 'L1I', '', 'LLC', '', 'DRAM', '');
+lgd = legend('L2', '', 'L1I', '', 'LLC', '', 'DRAM', '');
 lgd.Position = [0.85, 0.14, 0.02, 0.05];
 set(findall(gcf, '-property', 'FontSize'), 'FontSize', 10);
 lgd.FontSize = 8;
