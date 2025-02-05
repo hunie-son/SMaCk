@@ -34,6 +34,10 @@ To validate our approach, we assume that the attacker injects malicious code int
   * Datasets <br/>
   `cd SMaCk/Data`<br/>
 
+  *One-click script operation for demonstration <br/>
+  `cd SMaCk/Mastik_cachetime`<br/>
+  `./auto_cachetime.sh`<br/>
+
 - ### SMaCk Prime and IProbe attack:
   * Performing Prime and IProbe attack  <br/>
   `cd SMaCk/SMaCk_PNP`<br/>
@@ -48,6 +52,13 @@ To validate our approach, we assume that the attacker injects malicious code int
 
   * Binary Datasets <br/>
   `cd SMaCk/SMaCk_PNP_variants`<br/>
+
+  *One-click script operation for demonstration <br/>
+  `cd SMaCk/SMaCk_PNP`<br/>
+  - Attack without victim access
+  `./auto_pnp.sh`<br/>
+  - Attack with victim access
+  `./auto_pnp_victim.sh`<br/>
   
 - ### SMaCk ISpectre attack:
   * Performing Spectre attack utilizing SMC behavior on L1i cache <br/>
@@ -57,3 +68,8 @@ To validate our approach, we assume that the attacker injects malicious code int
   `cd SMaCk/SMaCk_ISpectre`<br/>
   `make`<br/>
   `taskset -c <core#> ./smack_ispectre <Function_name> <Iteration> <Anomaly>`<br/>
+
+  *One-click script operation for demonstration <br/>
+  `cd SMaCk/SMaCk_ISpectre`<br/>
+  `./auto_spectre.sh .sh`<br/>
+  
