@@ -55,9 +55,9 @@ To validate our approach, we assume that the attacker injects malicious code int
 
   * One-click script operation for demonstration <br/>
   `cd SMaCk/SMaCk_PNP`<br/>
-  - Attack without victim access
+  Attack without victim access <br/>
   `./auto_pnp.sh`<br/>
-  - Attack with victim access
+  Attack with victim access <br/>
   `./auto_pnp_victim.sh`<br/>
   
 - ### SMaCk ISpectre attack:
