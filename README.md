@@ -39,7 +39,7 @@ To validate our approach, we assume that the attacker injects malicious code int
   `./auto_cachetime.sh`<br/>
 
   * Note that timing differences may differ based on the microarchitecture as described in Table 3 in our paper.<br/>
-  * Based on the figure we draw from the `Draw_cachetime/cache_draw.m`, we can identify the timing difference to perform the following attacks.<br/>
+  * We can identify the timing difference (On the target microarchitecture) to perform the following attacks based on the figure we draw from the `Draw_cachetime/cache_draw.m`.<br/>
 
 - ### SMaCk Prime and IProbe attack:
   * Performing Prime and IProbe attack  <br/>
